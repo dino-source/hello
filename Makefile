@@ -1,0 +1,10 @@
+COMPILE=g++
+SOURCE_FILE=/home/dino/dev/c++/hello_cpp/helloworld.cpp
+WITH_CXX_STANDARD=-std=c++20
+USING_COMPILER_FLAGS=-pedantic -Wall -Wextra
+FROM_CURRENT_DIR=.
+RUN_EXECUTABLE=a.out
+
+
+compile_and_run:
+	${COMPILE} ${WITH_CXX_STANDARD} ${USING_COMPILER_FLAGS} ${SOURCE_FILE} && ${FROM_CURRENT_DIR}/${RUN_EXECUTABLE}
